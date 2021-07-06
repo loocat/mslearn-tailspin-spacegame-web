@@ -17,10 +17,10 @@ steps:
   inputs:
     version: '$(dotnetSdkVersion)'
 
-# - task: NuGetToolInstaller@1
-#   inputs:
-#     versionSpec: '5.x'
-#     checkLatest: false
+- task: NuGetToolInstaller@1
+  inputs:
+    versionSpec: '5.10'
+    checkLatest: false
 
 - task: Npm@1
   displayName: 'Run npm install'
