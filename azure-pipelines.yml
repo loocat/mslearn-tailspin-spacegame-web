@@ -19,8 +19,8 @@ steps:
 
 - task: NuGetToolInstaller@1
   inputs:
-    versionSpec: '5.10.0'
-    checkLatest: true
+    versionSpec: '5.x'
+    checkLatest: false
 
 - task: Npm@1
   displayName: 'Run npm install'
